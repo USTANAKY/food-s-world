@@ -1,0 +1,602 @@
+/* ----- GENERAL STYLING ----- */
+body {
+    margin: 0;
+}
+
+h1,h2,h3 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 300;
+}
+
+p,
+a {
+    font-family: 'lato', sans-serif;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* ----- CUSTOM STYLING ----- */
+
+.logo {
+    filter: invert(100);
+    display: block;
+    margin: auto;
+}
+
+#wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* Navigation */
+.nav-header {
+    height: 800px;
+    background-image: url("./Assets/Img/bg-header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 1em;
+}
+
+.nav-menu,
+.nav-socialicons {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 21px;
+    list-style: none;
+}
+
+.navsocial {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.navsocial .nav-link {
+    margin: 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5em;
+    cursor: pointer;
+}
+
+.navhov:active, .navhov:hover {
+    border-top: 2px solid white;
+    transition: .2s;
+}
+
+.smhov i:active, .smhov i:hover{
+    transform: scale(1.2);
+    transition: .2s;
+    color: #ffd149;
+}
+
+.fab {
+    margin-left: .7em;
+    color: #dab33e;
+}
+
+
+/* Promo */
+#promo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.intro-header {
+    font-size: 90px;
+    margin-top: 1.5em;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+.front-link {
+    margin: 1em;
+    text-transform: uppercase;
+    padding: 20px 50px;
+    cursor: pointer;
+}
+
+.front-link:hover, .front-link:active {
+    background-color: #000000b8;
+    transition: .4s;
+}
+
+.bg-black {
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+.bg-white {
+    background-color: rgba(255, 255, 255, 0.288);
+}
+
+.front-link a {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* About */
+#about {
+    background-color: white;
+    background-image: url("./Assets/Img/basic_bg.png");
+    height: 700px;
+    padding: 45px 0px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about-food {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.about-header {
+    font-size: 3em;
+    color: #cc9900;
+    margin-bottom: .4em;
+}
+
+.foodimg {
+    margin-top: 20px;
+    padding-left: 20%;
+}
+
+.about-img-container {
+    padding-top: 40px;
+}
+
+
+
+/* Ingredients */
+#ingredients {
+    background-image: url("./Assets/Img/ingredients_bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    color: white;
+}
+
+.ingredients-box {
+    background-color: #000000a6;
+    text-align: center;
+    width: 650px;
+    margin-top: 6em;
+    margin-bottom: 5em;
+    padding-top: 2em;
+    position: relative;
+    right: 18em;
+}
+
+.ingredients-header {
+    font-size: 3em;
+    margin-bottom: .4em;
+}
+
+.ingredients-box p {
+    margin-top: 2em;
+}
+
+.ingredients-imgbox {
+    margin-top: 3em;
+}
+
+.ingredients-list {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-left: 0;
+}
+
+
+
+/* Menu */
+#menu {
+    background-image: url("./Assets/Img/menu_pattern.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menucard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.menucard-heading {
+    font-size: 2em;
+    color: #cc9900;
+    margin-bottom: .4em;
+    margin-top: 2.5em;
+    text-align: center;
+}
+
+.menucard-divider {
+    display: block;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+.menu-right,
+.menu-left {
+    margin: 2.5em 6.5em;
+}
+
+.menu-box {
+    margin-bottom: .5em;
+    padding: 0 1.2em 0 1.2em;
+}
+
+.dish {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1.3px solid #dab33e;
+    font-size: 1.2em;
+    color: #cc9900;
+}
+
+.dish-name,
+.dish-price {
+    font-family: 'Yeseva One', cursive;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.dish-description {
+    margin-top: 0;
+    margin-bottom: .7em;
+}
+
+.special-box .dish {
+    border:none;
+}
+
+.special-box {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+}
+
+.special-prize {
+    margin-bottom: 0;
+    margin-top: -1em;
+    margin-right: -1.49em;
+    padding: 0px .7em;
+    color: white;
+    background-color: #cc9900;
+    font-size: 13px;
+}
+.special {
+    border: 1px solid #cc9900;
+}
+
+
+
+/* Review */
+#reviews {
+    background-image: url("./Assets/Img/reviews_bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    display: flex;
+}
+
+.review-box {
+    background-color: #000000c7;
+    text-align: center;
+    width: 45%;
+    margin: auto;
+    padding: 3em 0;
+}
+
+.review-header {
+    color: white;
+    font-size: 2.7em;
+}
+
+.review-box p {
+    color: white;
+    font-size: 1.5em;
+}
+
+.nyfood {
+    font-size: .8em;
+}
+
+
+
+/* Reservation */
+#reservations {
+    background-image: url("./Assets/Img/basic_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.containerbox {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.reserve-header {
+    font-size: 2em;
+    color: #cc9900;
+    margin-top: 0;
+    margin-bottom: .4em;
+}
+
+.desertimg-container {
+    display: flex;
+}
+
+.desertimg {
+    margin: 0 15px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.outer-form {
+    display: inline-flex;
+    color: #cc9900;
+}
+
+
+.reserve-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-left,
+.form-right {
+    margin: 15px 15px;
+    display: block;
+    text-align: left;
+}
+
+.form-wrap {
+    display: flex;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="text"],
+input[type="date"]{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 200px;
+    font-style: italic;
+    height: 2em;
+    font-family: 'lato', sans-serif;
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+    -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #cc9900;
+    border-style: solid;
+}
+
+.input {
+    display: block;
+}
+
+.input button {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #cc9900;
+    color: white;
+    border-style: none;
+    font-size: 1em;
+    font-family: 'lato', sans-serif;
+}
+
+.input button:hover{
+    background-color: #af8300;
+    transition: .4s;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #191919;
+    color: white;
+    overflow: hidden;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+
+/* Responsive Media Queries */
+@media screen and (max-width: 1100px) {
+    .nav-header,
+    #about,
+    #ingredients,
+    #reviews{
+        height: auto;
+    }
+    
+    .menu-right {
+        margin-top: 0;
+    }
+    .intro-header {
+        font-size: 50px;
+    }
+    
+    .nav-menu,
+    .nav-socialicons {
+        font-size: 15px;
+    }
+    
+    .review-box p {
+        font-size: 1em;
+    }
+    
+    .review-box {
+        margin: 3em auto;
+    }
+    
+    .ingredients-box {
+        right: 3em;
+    }
+    
+    .menu-left,
+    .menu-right {
+        margin: 2.5em 1.5em;
+    }
+    
+    .left-container {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .footer-container {
+        display: block;
+    }
+    .footer-column {
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 726px) {
+    .nav-container {
+        display: block;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 1em;
+    }
+
+    .nav-menu,
+    .nav-socialicons {
+        display: block;
+        font-size: 16px;
+        list-style: none;
+        padding: 0;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        margin-top: 1.5em;
+        font-size: 1.3em;
+    }
+    
+    .navli {
+        padding: 10px;
+        margin: 10px;
+        background: rgba(0, 0, 0, 0.445);
+    }
+
+    .nav-link {
+        color: white;
+        text-decoration: none;
+        margin-left: 0;
+    }
+    
+    .somelink {
+        background: none !important;
+    }
+    
+    .navsocial {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .fab {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .review-box {
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 576px) {
+    .intro-header {
+        font-size: 30px;
+    }
+    
+    .nav-link {
+        font-size: 14px;
+    }
+    
+    #promo {
+        display: block;
+        padding-bottom: 10px;
+    }
+    .front-link {
+        text-align: center;
+        display: block;
+        padding: 10px 35px;
+        width: 20%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .front-link a {
+        font-size: 10px;
+    }
+    
+    .ingredients-box {
+        width: 100%;
+        right: 0;
+    }
+    
+    .menu-left,
+    .menu-right {
+        margin: 0 20px;
+        width: 100%;
+    }
+    
+    .outer-form {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
